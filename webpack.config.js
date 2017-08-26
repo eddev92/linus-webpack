@@ -1,59 +1,58 @@
-//configuracion de webpack
+var path = require("path");
+var HtmlWebpackPlugin = require("html-webpack-plugin");
+var CopyWebpackPlugin = require("copy-webpack-plugin");
 
-var webpack = require('webpack');
-var path = require('path');
-var libraryName = 'library';
-var outputFile = libraryName + '.js';
 
-var config = {
-  entry: __dirname + '/src/index.js',
-  devtool: 'source-map',
-  output: {
-    path: __dirname + '/lib',
-    filename: outputFile,
-    library: libraryName,
-    libraryTarget: 'umd',
-    umdNamedDefine: true
-  },
-  module: {
-    loaders: [
-      {
-        test: /(\.jsx|\.js)$/,
-        loader: 'babel',
-        exclude: /(node_modules|bower_components)/
-      },
-      {
-        test: /(\.jsx|\.js)$/,
-        loader: "eslint-loader",
-        exclude: /node_modules/
-      }
-    ]
-  },
+module.exports = {
+    entry: {
+        client: "./src/index.js",
+    },
+    output: {
+        path: path.resolve(__dirname, "build"),
+        filename: "[name].js"
+    },
+    resolve: {
+        extensions: [".jsx", ".js", ".ts",".tsx", ".css"]
+    },
     devServer: {
-    contentBase: path.resolve(__dirname, "public"),
-    host: "0.0.0.0",
-    port: 8000,
-    inline: true,
-    disableHostCheck: true,
-  },
-  resolve: {
-    root: path.resolve('./src'),
-    extensions: ['', '.js']
-  },
-   plugins: [
+        contentBase: path.resolve(__dirname, "public"),
+        host: "0.0.0.0",
+        port: 8000,
+        inline: true,
+        disableHostCheck: true,
+    },
+    module: {
+        loaders: [
+            {
+                test: /(\.ts|\.tsx)$/,
+                enforce: 'pre',
+                loader: 'tslint-loader',
+                options: { /* Loader options go here */ }
+            },
+            {
+                test: /(\.ts|\.tsx)$/, loader: "ts-loader",
+                exclude: /(node_modules|bower_components)/
+            },
+            {
+                test: /\.css$/,
+                use: ["style-loader", "css-loader"]
+            }
+        ]
+    },
+    externals: {},
+    plugins: [
         new HtmlWebpackPlugin({
             template: path.resolve(__dirname, "public/index.html"),
             hash: true,
             chunks: ["client"],
             filename: "index.html",
             inject: "body"
-        })
+        }),
         new CopyWebpackPlugin([
             { from: "public/js", to: "js" },
       { from: "public/css", to: "css" },
             { from: "public/images", to: "images" },
-        ])
+        ]),
     ],
+    devtool: "source-map"
 };
-
-module.exports = config;
