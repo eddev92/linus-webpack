@@ -1,0 +1,266 @@
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-refund-paid:before {
+  content: "\e90a";
+  color: #00af3f;
+}
+.icon-file-count .path1:before {
+  content: "\e906";
+  color: rgb(254, 254, 254);
+}
+.icon-file-count .path2:before {
+  content: "\e907";
+  margin-left: -1em;
+  color: rgb(51, 51, 51);
+}
+.icon-file-count .path3:before {
+  content: "\e908";
+  margin-left: -1em;
+  color: rgb(254, 254, 254);
+}
+.icon-file-count .path4:before {
+  content: "\e909";
+  margin-left: -1em;
+  color: rgb(51, 51, 51);
+}
+.icon-alert-sm .path1:before {
+  content: "\e900";
+  color: rgb(255, 0, 72);
+}
+.icon-alert-sm .path2:before {
+  content: "\e901";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-alert-md .path1:before {
+  content: "\e902";
+  color: rgb(255, 0, 72);
+}
+.icon-alert-md .path2:before {
+  content: "\e903";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-add:before {
+  content: "\e90b";
+  color: #09c;
+}
+.icon-close:before {
+  content: "\e90c";
+}
+.icon-question:before {
+  content: "\e90d";
+  color: #000;
+}
+.icon-bag-empty:before {
+  content: "\e90e";
+  color: #008ebd;
+}
+.icon-remove-element:before {
+  content: "\e90f";
+  color: #09c;
+}
+.icon-remove-blue .path1:before {
+  content: "\e910";
+  color: rgb(0, 0, 0);
+}
+.icon-remove-blue .path2:before {
+  content: "\e911";
+  margin-left: -1em;
+  color: rgb(0, 116, 178);
+}
+.icon-remove-blue .path3:before {
+  content: "\e912";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-remove-blue .path4:before {
+  content: "\e913";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-remove-blue .path5:before {
+  content: "\e914";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-remove-blue .path6:before {
+  content: "\e915";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-camera:before {
+  content: "\e916";
+}
+.icon-celular:before {
+  content: "\e917";
+}
+.icon-close-session:before {
+  content: "\e918";
+}
+.icon-close-session-2:before {
+  content: "\e919";
+}
+.icon-check .path1:before {
+  content: "\e91a";
+  color: rgb(0, 0, 0);
+}
+.icon-check .path2:before {
+  content: "\e91b";
+  margin-left: -1em;
+  color: rgb(0, 175, 63);
+}
+.icon-check .path3:before {
+  content: "\e91c";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-check-unselected:before {
+  content: "\e91f";
+  color: #bbb;
+}
+.icon-config-abono:before {
+  content: "\e922";
+}
+.icon-config-password:before {
+  content: "\e923";
+}
+.icon-config-account:before {
+  content: "\e924";
+}
+.icon-config:before {
+  content: "\e925";
+}
+.icon-consulta-medica:before {
+  content: "\e92b";
+}
+.icon-phone:before {
+  content: "\e92c";
+  color: #7b7b7b;
+}
+.icon-diagnostic-signature:before {
+  content: "\e904";
+}
+.icon-diag-seal:before {
+  content: "\e905";
+}
+.icon-diagnostic-text:before {
+  content: "\e92d";
+}
+.icon-documents:before {
+  content: "\e92e";
+}
+.icon-email:before {
+  content: "\e932";
+  color: #00af3f;
+}
+.icon-email2:before {
+  content: "\e933";
+  color: #bbb;
+}
+.icon-refund-edit:before {
+  content: "\e935";
+  color: #888;
+}
+.icon-refund-return:before {
+  content: "\e936";
+  color: #ff0048;
+}
+.icon-refun-send:before {
+  content: "\e937";
+  color: #00af3f;
+}
+.icon-refund-send2:before {
+  content: "\e938";
+  color: #00af3f;
+}
+.icon-refund-reject:before {
+  content: "\e939";
+  color: #ff0048;
+}
+.icon-estudio-imagenes:before {
+  content: "\e93a";
+}
+.icon-examen-laboratorio:before {
+  content: "\e93b";
+}
+.icon-arrow-left:before {
+  content: "\e93c";
+}
+.icon-arrow-down:before {
+  content: "\e93d";
+}
+.icon-images:before {
+  content: "\e93e";
+}
+.icon-history-medic:before {
+  content: "\e93f";
+}
+.icon-bg-home:before {
+  content: "\e940";
+}
+.icon-info .path1:before {
+  content: "\e941";
+  color: rgb(187, 187, 187);
+}
+.icon-info .path2:before {
+  content: "\e942";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-logo:before {
+  content: "\e943";
+  color: #09c;
+}
+.icon-medicamentos:before {
+  content: "\e946";
+  color: #09c;
+}
+.icon-menu:before {
+  content: "\e947";
+}
+.icon-notification:before {
+  content: "\e948";
+  color: #7b7b7b;
+}
+.icon-new-refund .path1:before {
+  content: "\e949";
+  color: rgb(255, 255, 255);
+}
+.icon-new-refund .path2:before {
+  content: "\e94a";
+  margin-left: -1em;
+  color: rgb(0, 153, 204);
+}
+.icon-new-refund .path3:before {
+  content: "\e94b";
+  margin-left: -1em;
+  color: rgb(0, 153, 204);
+}
+.icon-procedimiento-ambulatorio:before {
+  content: "\e950";
+}
+.icon-reembolso:before {
+  content: "\e951";
+  color: #7c7b7b;
+}
+.icon-phone2:before {
+  content: "\e952";
+  color: #2aa742;
+}
+.icon-terapia:before {
+  content: "\e953";
+}

@@ -1,0 +1,11 @@
+.login-container{
+    margin: 20px;
+    max-width: 350px;
+    font-family: Foco, Arial;
+    color:white;
+    width: 100%;
+
+}
+.login-container form{
+  width: 100%;
+}

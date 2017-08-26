@@ -35,17 +35,25 @@ var config = {
     port: 8000,
     inline: true,
     disableHostCheck: true,
-    proxy: [{
-        path: `/api`,
-        // target: 'http://10.36.96.219:9090',
-        target: 'https://integration.innovacionpacifico.com',
-        secure: false
-    }],
   },
   resolve: {
     root: path.resolve('./src'),
     extensions: ['', '.js']
-  }
+  },
+   plugins: [
+        new HtmlWebpackPlugin({
+            template: path.resolve(__dirname, "public/index.html"),
+            hash: true,
+            chunks: ["client"],
+            filename: "index.html",
+            inject: "body"
+        })
+        new CopyWebpackPlugin([
+            { from: "public/js", to: "js" },
+      { from: "public/css", to: "css" },
+            { from: "public/images", to: "images" },
+        ])
+    ],
 };
 
 module.exports = config;

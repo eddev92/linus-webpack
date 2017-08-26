@@ -1,0 +1,9 @@
+.btn {
+    font-family: 'Foco', 'Foco-Regular', Arial !important;
+}
+.btn-success {
+    height: 50px;
+    border-radius: 2px;
+    background-color: #00af3f;
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.15);
+}

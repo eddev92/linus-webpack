@@ -1,0 +1,39 @@
+:-webkit-autofill {
+	-webkit-box-shadow: 0 0 0px 1000px #fff inset;
+}
+::-moz-placeholder{
+	font-family: 'Foco', Arial, Helvetica, sans-serif;  
+}
+input::-webkit-input-placeholder {
+	font-family: 'Foco', Arial, Helvetica, sans-serif;
+}
+
+input:-ms-input-placeholder {
+	font-family: 'Foco', Arial, Helvetica, sans-serif;
+}
+
+input:-moz-placeholder {
+	font-family: 'Foco', Arial, Helvetica, sans-serif;
+}
+
+input::-moz-placeholder {
+	font-family: 'Foco', Arial, Helvetica, sans-serif;
+}
+select{
+    background: url(data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0Ljk1IDEwIj48ZGVmcz48c3R5bGU+LmNscy0xe2ZpbGw6I2ZmZjt9LmNscy0ye2ZpbGw6IzQ0NDt9PC9zdHlsZT48L2RlZnM+PHRpdGxlPmFycm93czwvdGl0bGU+PHJlY3QgY2xhc3M9ImNscy0xIiB3aWR0aD0iNC45NSIgaGVpZ2h0PSIxMCIvPjxwb2x5Z29uIGNsYXNzPSJjbHMtMiIgcG9pbnRzPSIxLjQxIDQuNjcgMi40OCAzLjE4IDMuNTQgNC42NyAxLjQxIDQuNjciLz48cG9seWdvbiBjbGFzcz0iY2xzLTIiIHBvaW50cz0iMy41NCA1LjMzIDIuNDggNi44MiAxLjQxIDUuMzMgMy41NCA1LjMzIi8+PC9zdmc+) no-repeat 95% 50%;
+	-moz-appearance: none; 
+	-webkit-appearance: none; 
+	appearance: none;
+	height: 30px; 
+	width: 100%;
+	padding: 5px;
+}
+:root{
+    --background-app:{
+        background-color: #623262;
+		background: -moz-linear-gradient(top,  #623262 0%, #313162 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(top,  #623262 0%,#313162 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to bottom,  #623262 0%,#313162 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#623262', endColorstr='#313162',GradientType=0 ); /* IE6-9 */
+    }
+}
