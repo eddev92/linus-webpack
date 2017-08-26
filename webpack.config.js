@@ -50,9 +50,9 @@ module.exports = {
         }),
         new CopyWebpackPlugin([
             { from: "public/js", to: "js" },
-      { from: "public/css", to: "css" },
+            { from: "public/css", to: "css" },
+            { from: "public/fonts", to: "fonts"},
             { from: "public/images", to: "images" },
         ]),
-    ],
-    devtool: "source-map"
+    ]
 };

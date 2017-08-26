@@ -24,15 +24,22 @@
 
 	</head>
 	<body class="">
-		<!-- <div id="loading-bar"  style="display:none;">
+<!-- 		<div id="loading-bar"  style="display:none;">
 			<div class="bar"></div>
-		</div>
+		</div> -->
 		<div id="app">
+		<h1>HOLA LINUS!</h1>
 		</div>
-		<div id="container-loading" style="display:none;">
+		<!-- <div id="container-loading" style="display:none;">
 		<div data-loader="circle"></div>
-		</div>
-		<input type="file" accept="image/*" id="input-camera" capture style="visibility:hidden;"/> -->
+		</div> -->
+		<input type="file" accept="image/*" id="input-camera" capture style="position: absolute;top: 91px;"/>
 	</body>
+	<script>
+		document.querySelector('#input-camera').addEventListener('click', (e: any) => {
+    const event = new CustomEvent('start-camera', {detail: e});
+    document.dispatchEvent(event);
+});
+	</script>
 </html>
 
